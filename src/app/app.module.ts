@@ -7,7 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HoroscopoComponent } from './components/home/horoscopo/horoscopo.component';
 import { MusicComponent } from './components/home/music/music.component';
 import { DivisasComponent } from './components/home/divisas/divisas.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule,   } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { DivisasComponent } from './components/home/divisas/divisas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

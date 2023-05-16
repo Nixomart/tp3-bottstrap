@@ -1,99 +1,244 @@
 <section class="container">
-    <h1>Los signos zodiacales</h1>
-    <div class="container row row-cols-2 row-cols-md-3">
-        <div class="d-flex flex-column col flex-md-row ">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/34/5c/de/345cde0b871f5af40801d3f805394ba0.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto ">
-                <p class="">ARIES</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/34/53/7a/34537aa312bc9b094bc6b7a3f8e944cd.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">LEO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/736x/c0/13/71/c01371c811e0f916a8d0427e41b597eb.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">SAGITARIO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/78/72/89/787289af148625541f8e5701721b5603.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">TAURO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/736x/28/f7/c4/28f7c49f7b455501b5f7cb0f85a955a4.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">VIRGO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/60/d0/b4/60d0b41ef2fffe9b7bcee6b905b07486.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">CAPRICORNIO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/55/7e/47/557e47e71e92feb1cc4ec6db91e56250.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">GEMINIS</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/e3/a8/43/e3a843497f1b9d6b77ea7b55008eb242.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">LIBRA</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/49/1c/b4/491cb43e19b2885de023fbf06a7aff7c.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">ACUARIO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/a7/bf/78/a7bf78c7784306316b8abe25b2a0376c.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">CANCER</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/25/ee/7b/25ee7b7eb9ef1b539a85e235ab73b2cf.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">SCORPIO</p>
-            </div>
-        </div>
-        <div class="d-flex flex-column col flex-md-row">
-                <img class="m-auto m-md-0" width="100" src="https://i.pinimg.com/564x/17/50/d1/1750d129e69d002539fe0630806cf1ff.jpg" alt="">
-            <div class="bg-success text-white text-center w-50 h-25 m-auto">
-                <p class="">PISCES</p>
-            </div>
-        </div>
+  <h1>Los signos zodiacales</h1>
+  <div class="container row row-cols-2 row-cols-md-3">
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/34/5c/de/345cde0b871f5af40801d3f805394ba0.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="Aries" class="pointer w-100 h-100">Aries</label>
+        <input
+          class="d-none"
+          id="Aries"
+          type="button"
+          value="Aries"
+          (click)="getAllDayle('aries')"
+          name="Aries"
+        />
+      </div>
     </div>
-  </section>
-  <section class="container">
-    <div>
-        <div class="bg-success text-white h3">Libra - Dia</div>
-        <div class="bg-secondary bg-opacity-25 text-white">
-            <h4 class="text-bg-info">Libra</h4> 
-            <p class="text-black-50">
-                Culpa consectetur culpa consectetur velit irure officia non anim amet. Officia enim incididunt in eu adipisicing ad labore quis aliquip quis est aliquip ullamco. Incididunt dolore est laborum ea et Lorem mollit tempor fugiat enim consequat minim ipsum fugiat. In sint consequat anim cupidatat sit sunt cillum reprehenderit labore sint ut officia ad nisi. Lorem commodo ipsum esse magna eiusmod culpa consectetur sint occaecat occaecat ut elit cupidatat ad. Aute minim mollit anim commodo consequat nisi qui esse eiusmod elit anim aute. Nulla laboris sunt esse laborum voluptate.
-            </p>
-        </div>
-
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/34/53/7a/34537aa312bc9b094bc6b7a3f8e944cd.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="Liao" class="pointer w-100 h-100">Leo</label>
+        <input
+          class="d-none"
+          id="Liao"
+          type="button"
+          value="Liao"
+          (click)="getAllDayle('leo')"
+          name="Liao"
+        />
+      </div>
     </div>
-    <div>
-        <div class="bg-success text-white h3">Libra - Dia</div>
-        <div class="bg-secondary bg-opacity-25 text-white">
-            <h4 class="text-bg-info">Libra</h4> 
-            <p class="text-black-50">
-                Proident nulla eiusmod consequat velit est exercitation amet dolor magna quis. Esse ullamco et nulla excepteur deserunt nostrud non irure. Officia nostrud minim ad quis fugiat dolor ullamco labore incididunt. Id consectetur id ea qui ipsum sit sint est eiusmod incididunt voluptate ex esse. Eu excepteur minim excepteur ullamco consequat est pariatur consequat deserunt aute.
-            </p>
-        </div>
-
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/736x/c0/13/71/c01371c811e0f916a8d0427e41b597eb.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="sagitario" class="pointer w-100 h-100">sagitario</label>
+        <input
+          class="d-none"
+          id="sagitario"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('sagittarius')"
+          name="sagitario"
+        />
+      </div>
     </div>
-  </section>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/78/72/89/787289af148625541f8e5701721b5603.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="taurus" class="pointer w-100 h-100">Tauro</label>
+        <input
+          class="d-none"
+          id="taurus"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('taurus')"
+          name="taurus"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/736x/28/f7/c4/28f7c49f7b455501b5f7cb0f85a955a4.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="virgo" class="pointer w-100 h-100">Virgo</label>
+        <input
+          class="d-none"
+          id="virgo"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('virgo')"
+          name="virgo"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/60/d0/b4/60d0b41ef2fffe9b7bcee6b905b07486.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="capricorn" class="pointer w-100 h-100">Capricornio</label>
+        <input
+          class="d-none"
+          id="capricorn"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('capricorn')"
+          name="capricorn"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/55/7e/47/557e47e71e92feb1cc4ec6db91e56250.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="gemini" class="pointer w-100 h-100">Geminis</label>
+        <input
+          class="d-none"
+          id="gemini"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('gemini')"
+          name="gemini"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/e3/a8/43/e3a843497f1b9d6b77ea7b55008eb242.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="libra" class="pointer w-100 h-100">Libra</label>
+        <input
+          class="d-none"
+          id="libra"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('libra')"
+          name="libra"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/49/1c/b4/491cb43e19b2885de023fbf06a7aff7c.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="aquarius" class="pointer w-100 h-100">Acuario</label>
+        <input
+          class="d-none"
+          id="aquarius"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('aquarius')"
+          name="aquarius"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/a7/bf/78/a7bf78c7784306316b8abe25b2a0376c.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="cancer" class="pointer w-100 h-100">Cancer</label>
+        <input
+          class="d-none"
+          id="cancer"
+          type="button"
+          value="sagitario"
+          (click)="getAllDayle('cancer')"
+          name="cancer"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/25/ee/7b/25ee7b7eb9ef1b539a85e235ab73b2cf.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="virgo" class="pointer w-100 h-100">Virgo</label>
+        <input
+          class="d-none"
+          id="virgo"
+          type="button"
+          value="VIRGO"
+          (click)="getAllDayle('virgo')"
+          name="virgo"
+        />
+      </div>
+    </div>
+    <div class="d-flex flex-column col flex-md-row">
+      <img
+        class="m-auto m-md-0"
+        width="100"
+        src="https://i.pinimg.com/564x/17/50/d1/1750d129e69d002539fe0630806cf1ff.jpg"
+        alt=""
+      />
+      <div class="bg-success text-white text-center w-50 h-25 m-auto">
+        <label for="pisces" class="pointer w-100 h-100">Piscies</label>
+        <input
+          class="d-none"
+          id="pisces"
+          type="button"
+          value="VIRGO"
+          (click)="getAllDayle('pisces')"
+          name="Piscies"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div>
+    <div class="bg-success text-white h3">Tu dia de hoy - {{ daily.date }}</div>
+    <div class="bg-secondary bg-opacity-25 text-white">
+      <h4 class="text-bg-info">{{ daily.title }}</h4>
+      <p class="text-black-50">
+        {{ daily.text }}
+      </p>
+    </div>
+  </div>
+</section>

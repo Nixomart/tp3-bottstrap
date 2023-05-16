@@ -127,28 +127,26 @@
           <div class="text-white">Conversor de Divisas</div>
           <div>
             <label for="amount" class="text-white-50">Cantidad</label>
-            <input type="number" placeholder="Cantidad" name="amount" id="" />
+            <input type="number" placeholder="Cantidad" name="amount" id=""  [(ngModel)]="cant" />
           </div>
           <div>
             <label for="" class="text-white-50">De:</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>USD</option>
-              <option value="1">BTC</option>
-              <option value="2">EUR</option>
-              <option value="3">JPY</option>
+            <select name="oa" [(ngModel)]="fromType" class="form-select" aria-label="Default select example">
+              <option selected value="ARS" >ARS</option>
+              <option value="USD" >USD</option>
+              <option value="BTC" >BTC</option>
             </select>
           </div>
           <div>
             <label for="" class="text-white-50">A:</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>ARS</option>
-              <option value="1">USD</option>
-              <option value="2">BTC</option>
-              <option value="3">JPY</option>
+            <select name="o"  [(ngModel)]="toType" class="form-select" aria-label="Default select example">
+              <option selected value="USD" >USD</option>
+              <option value="ARS" >ARS</option>
+              <option value="BTC" >BTC</option>
             </select>
           </div>
-          <div class="bg-white">example</div>
-          <button type="submit" class="bg-warning">Convertir</button>
+          <div class="bg-white text-black ">{{convertido}}</div>
+          <input [disabled]="!fromType || !toType || !cant" type="button" (click)="handleDvisas()" class="bg-warning">
         </div>
       </form>
     </div>
