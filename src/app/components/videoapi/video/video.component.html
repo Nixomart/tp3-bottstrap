@@ -1,0 +1,83 @@
+<form class="form-inline d-flex py-3 mx-3 my-5 my-lg-0">
+    <input
+      class="form-control mr-sm-2"
+      type="search"
+      name="hol"
+      placeholder="Search"
+      aria-label="Search"
+      [(ngModel)]="search"
+    />
+  
+    <input
+      type="button"
+      name="find"
+      id="find"
+      value="Buscar"
+      placeholder="Buscar"
+      class="btn btn-outline-success my-2 my-sm-0"
+      (click)="findVideo()"
+    />
+  </form>
+  <table class="table table-striped">
+    <thead>
+      <tr class="">
+        <th scope="col">ID</th>
+        <th scope="col">TITULO</th>
+        <th scope="col">ENLACE</th>
+        <th scope="col">CANAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="" *ngFor="let video of videos">
+        <th scope="row">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            (click)="selectVideo(video)"
+          >
+            {{ video.id }}
+          </button>
+        </th>
+        <td>{{ video.title }}</td>
+        <td>
+          <a href="{{ video.link }}"> Ver Video </a>
+        </td>
+        <td>
+          {{ video.channel }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div
+    *ngIf="selectedVideoo"
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            {{ selectedVideoo.title }}
+          </h1>
+        </div>
+        <p>{{ selectedVideoo.channel }}</p>
+        <img src={{selectedVideoo.image}} alt="">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <a href="{{ selectedVideoo.link }}" class="btn btn-primary"
+            >Ver video</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>

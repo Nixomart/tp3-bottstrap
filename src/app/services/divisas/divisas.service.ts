@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class DivisasService {
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient) {
+  }
 
   public convertDivisas(
     fromValue: number,

@@ -9,13 +9,15 @@ import { MusicComponent } from './components/home/music/music.component';
 import { DivisasComponent } from './components/home/divisas/divisas.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule,   } from '@angular/forms';
+import { VideoComponent } from './components/videoapi/video/video.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HoroscopoComponent,
     MusicComponent,
-    DivisasComponent
+    DivisasComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
